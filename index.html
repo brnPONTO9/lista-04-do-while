@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista 04 — Estruturas de Repetição (do...while) — 15 exercícios</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Lista 04 — Estruturas de Repetição (<code>do...while</code>)</h1>
+    <p class="lead">15 exercícios resolvidos utilizando exclusivamente o laço <code>do...while</code> nas iterações.</p>
+  </header>
+
+  <main class="grid">
+    <section class="card"><h2>1) 1 a 20</h2><button onclick="e1()">Executar</button><div id="o1" class="out"></div></section>
+    <section class="card"><h2>2) Pares 1 a 50</h2><button onclick="e2()">Executar</button><div id="o2" class="out"></div></section>
+    <section class="card"><h2>3) Tabuada (1 a 10)</h2><label>Número</label><input id="e3n" type="number" step="1"><button onclick="e3()">Gerar</button><div id="o3" class="out"></div></section>
+    <section class="card"><h2>4) Soma 1 a 100</h2><button onclick="e4()">Calcular</button><div id="o4" class="out"></div></section>
+    <section class="card"><h2>5) Soma pares 1 a 200</h2><button onclick="e5()">Calcular</button><div id="o5" class="out"></div></section>
+
+    <section class="card">
+      <h2>6) Maior e menor (10 inteiros)</h2>
+      <div class="row">
+        <div><label>N1</label><input id="e6a" type="number" step="1"></div>
+        <div><label>N2</label><input id="e6b" type="number" step="1"></div>
+        <div><label>N3</label><input id="e6c" type="number" step="1"></div>
+        <div><label>N4</label><input id="e6d" type="number" step="1"></div>
+        <div><label>N5</label><input id="e6e" type="number" step="1"></div>
+      </div>
+      <div class="row">
+        <div><label>N6</label><input id="e6f" type="number" step="1"></div>
+        <div><label>N7</label><input id="e6g" type="number" step="1"></div>
+        <div><label>N8</label><input id="e6h" type="number" step="1"></div>
+        <div><label>N9</label><input id="e6i" type="number" step="1"></div>
+        <div><label>N10</label><input id="e6j" type="number" step="1"></div>
+      </div>
+      <button onclick="e6()">Executar</button><div id="o6" class="out"></div>
+    </section>
+
+    <section class="card">
+      <h2>7) Média (5 inteiros)</h2>
+      <div class="row">
+        <div><label>N1</label><input id="e7a" type="number" step="1"></div>
+        <div><label>N2</label><input id="e7b" type="number" step="1"></div>
+        <div><label>N3</label><input id="e7c" type="number" step="1"></div>
+        <div><label>N4</label><input id="e7d" type="number" step="1"></div>
+        <div><label>N5</label><input id="e7e" type="number" step="1"></div>
+      </div>
+      <button onclick="e7()">Calcular</button><div id="o7" class="out"></div>
+    </section>
+
+    <section class="card"><h2>8) Fibonacci (10 termos)</h2><button onclick="e8()">Gerar</button><div id="o8" class="out"></div></section>
+
+    <section class="card">
+      <h2>9) De 1 até N</h2>
+      <label>N</label><input id="e9n" type="number" step="1" min="1">
+      <button onclick="e9()">Executar</button><div id="o9" class="out"></div>
+    </section>
+
+    <section class="card"><h2>10) Ímpares 100..200</h2><button onclick="e10()">Executar</button><div id="o10" class="out"></div></section>
+
+    <section class="card">
+      <h2>11) Maiores de idade (10 idades)</h2>
+      <div class="row">
+        <div><label>I1</label><input id="e11a" type="number" step="1"></div>
+        <div><label>I2</label><input id="e11b" type="number" step="1"></div>
+        <div><label>I3</label><input id="e11c" type="number" step="1"></div>
+        <div><label>I4</label><input id="e11d" type="number" step="1"></div>
+        <div><label>I5</label><input id="e11e" type="number" step="1"></div>
+      </div>
+      <div class="row">
+        <div><label>I6</label><input id="e11f" type="number" step="1"></div>
+        <div><label>I7</label><input id="e11g" type="number" step="1"></div>
+        <div><label>I8</label><input id="e11h" type="number" step="1"></div>
+        <div><label>I9</label><input id="e11i" type="number" step="1"></div>
+        <div><label>I10</label><input id="e11j" type="number" step="1"></div>
+      </div>
+      <button onclick="e11()">Calcular</button><div id="o11" class="out"></div>
+    </section>
+
+    <section class="card"><h2>12) Fatorial</h2><label>Inteiro ≥ 0</label><input id="e12n" type="number" step="1" min="0"><button onclick="e12()">Calcular</button><div id="o12" class="out"></div></section>
+
+    <section class="card"><h2>13) Soma múltiplos de 3 até N</h2><label>N</label><input id="e13n" type="number" step="1" min="0"><button onclick="e13()">Calcular</button><div id="o13" class="out"></div></section>
+
+    <section class="card">
+      <h2>14) 5 nomes em ordem invertida</h2>
+      <div class="row">
+        <div><label>Nome 1</label><input id="e14a" type="text"></div>
+        <div><label>Nome 2</label><input id="e14b" type="text"></div>
+        <div><label>Nome 3</label><input id="e14c" type="text"></div>
+        <div><label>Nome 4</label><input id="e14d" type="text"></div>
+        <div><label>Nome 5</label><input id="e14e" type="text"></div>
+      </div>
+      <button onclick="e14()">Exibir</button><div id="o14" class="out"></div>
+    </section>
+
+    <section class="card"><h2>15) Triângulo de asteriscos</h2><label>Base (N)</label><input id="e15n" type="number" step="1" min="1"><button onclick="e15()">Desenhar</button><div id="o15" class="out"></div></section>
+  </main>
+
+  <footer style="max-width:1100px;margin:20px auto 0;color:var(--muted);font-size:12px;">
+    <p>Todos os laços de repetição implementados com <code>do...while</code>.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

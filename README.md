@@ -57,7 +57,7 @@ O design segue o mesmo padrão das listas anteriores — **tema escuro, tipograf
 
 ## ⚠️ Observação
 
-> Todos os exercícios foram implementados exclusivamente com o laço `while`, sem uso de `for` ou `while`.
+> Todos os exercícios foram implementados exclusivamente com o laço `while`, sem uso de `for`.
 
 ---
 

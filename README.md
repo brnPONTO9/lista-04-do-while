@@ -1,4 +1,4 @@
-# 🔁 Lista 04 — Estruturas de Repetição (do...while)
+# 🔁 Lista 04 — Estruturas de Repetição (while)
 
 Este projeto contém **15 exercícios de lógica de programação em JavaScript**, resolvidos utilizando **exclusivamente o laço de repetição `do...while`**.  
 Cada exercício conta com uma interface interativa, com campos de entrada, botões e exibição imediata do resultado no navegador.
@@ -57,7 +57,7 @@ O design segue o mesmo padrão das listas anteriores — **tema escuro, tipograf
 
 ## ⚠️ Observação
 
-> Todos os exercícios foram implementados exclusivamente com o laço `do...while`, sem uso de `for` ou `while`.
+> Todos os exercícios foram implementados exclusivamente com o laço `while`, sem uso de `for` ou `while`.
 
 ---
 
